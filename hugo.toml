@@ -1,0 +1,49 @@
+theme = "blowfish"
+
+baseURL = "https://equatore.org/"
+title = ""
+
+defaultContentLanguage = "it"
+locale = "it_IT"
+
+showBreadcrumbs = true
+
+disableLanguages = ["en"]
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  defaultTheme = "light"
+  header = { layout = "basic" }
+
+  
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+      
+[[menu.main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 1
+  
+[[menu.main]]
+  name = "Storia"
+  pageRef = "storia"
+  weight = 10
+
+[[menu.main]]
+  name = "Progetti"
+  pageRef = "progetti"
+  weight = 20
+
+[[menu.main]]
+  name = "Documenti"
+  pageRef = "documenti"
+  weight = 30
+
+[[menu.main]]
+  name = "Contatti"
+  pageRef = "contatti"
+  weight = 40
